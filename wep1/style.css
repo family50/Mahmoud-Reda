@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+} 
+
+:root{
+     --bgcolor :#333333;
+     --textwhite :#fff;
+}
+ 
+.with-theme{
+    --bgcolor :#fff;
+    --textwhite :#333333;
+}
+
+
+.hero{
+    background: var(--bgcolor);
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero header nav {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center ;
+    height: 100px;
+    
+}
+
+.hero header nav .logo{
+    color: var(--textwhite);
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.hero header nav .logo span{
+    color: #23a3f2;
+}
+
+
+.hero header nav .nav-link a{
+    margin: 0 30px;
+    color: var(--textwhite);
+    transition: 1s;
+    
+}
+.hero header nav .nav-link a:hover{
+    color: #23a3f2;
+    text-shadow: 5px 5px blue;
+    position:relative;
+    bottom:  5px ;
+    right: 6px ;
+}
+
+.hero header nav .btn-wight{
+    font-size: 30px;
+    color: var(--textwhite);
+    cursor: pointer;   
+}
+
+
+.hero .contanier{
+    width: 90%;
+    margin: auto;
+    display: flex;
+   justify-content: end;
+   height: 100vh - 100px;
+   position: relative;
+}
+
+.hero .contanier .div-text{
+    position: absolute;
+    left: 0;
+    top: 50px;
+    transform: translateY(-50px); 
+    width: 50%; 
+    
+    padding-top:12% ;
+}
+
+.hero .contanier .div-img{
+    position: absolute;
+    width: 34%;
+    margin-right: 50px;
+}
+
+.hero .contanier .div-img img{
+    width: 100%;
+}
+
+.hero .contanier .div-text h4{
+    color: #888;
+    font-size: 22px;
+}
+
+.hero .contanier .div-text h1{
+    color: var(--textwhite);
+    font-size: 60px;
+    margin: 15px 0 10px;
+}
+
+.hero .contanier .div-text span{
+    color: #23a3f2;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.hero .contanier .div-text p{
+    color:var(--textwhite);
+    line-height: 1.8;
+    margin: 20px 0 40px;
+}
+
+.hero .contanier .div-text a{
+    background: #23a3f2;
+    padding: 10px 20px;
+    color: var(--textwhite);
+    border-radius: 10px;
+    transition: 3s;
+}       
+
+.hero .contanier .div-text a:hover{
+    position:relative;
+    bottom:  5px ;
+    right: 6px ;
+    box-shadow: 3px 3px 10px 5px #23a3f2;
+}
+
+.social{
+    position: absolute;
+    right: 0;
+    top: 40%;
+    transform: translateY(-50%);
+    right: -50px;
+    display: flex;
+    flex-direction: column;
+    gap: 55px;
+}
+    
+.social a{
+    color: #23a3f2;
+    font-size: 30px;
+    transition: 1s;
+}
+.social a:hover{
+    transform: scale(1.3);
+}
